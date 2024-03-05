@@ -5,6 +5,8 @@
     <title>Jokes in base 13</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        .body{padding-left: 0; padding-right: 0;}
+
         .b13-header {
             grid-area: header;
         }
@@ -41,7 +43,7 @@
         }
 
         .sky {
-            position: absolute;
+            /*position: absolute;*/
             width: 100%;
             background: #4b79a1;
             /* fallback for old browsers */
@@ -54,7 +56,8 @@
                     #0a2342);
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             background: -olinear-gradient(to top, #283e51, #0a2342);
-            height: 100vh;
+            height: 96vh;
+            margin: 0%;
         }
 
         .stars {
@@ -75,7 +78,7 @@
             text-align: center;
             font-size: 1.75rem;
             color: #fff;
-            width: 55%;
+            /* width: 55%; */
             margin: 5rem auto;
             line-height: 3rem;
             letter-spacing: 5px;
@@ -83,24 +86,25 @@
     </style>
 </head>
 
-<body>
-    <div class='sky'>
+
+<body  class='sky'>
+    <!-- <div class='sky'> -->
         <div class='stars'>
             <div class="grid-container">
                 <div class="b13-header" style="color: silver;"">
-                    <!--<header> -->
-                    <h1 >Don't panic</h1>
+                    <header> 
+                    <h1 >Don't Panic</h1>
                     <h3>I may be a sorry case, but I don't write jokes in base 13.</h3>
-                    <!-- </header> -->
+                    </header>
                 </div>
                 <div class="b13-menu"></div>
                 <div class="b13-main">
-                    <img src="docs/assets/Answer_to_Life_42.svg" alt="Meaning of life" width=75% height=75%/>
+                  <img src="docs/assets/Answer_to_Life_42.svg" alt="Meaning of life"/>
                 </div>
                 <div class="b13-footer"></div>
             </div>
         </div>
-    </div>
+    </div> 
 
 
 </body>
