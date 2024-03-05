@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jokes in base 13</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .b13-header {
+            grid-area: header;
+        }
+
+        .b13-menu {
+            grid-area: menu;
+        }
+
+        .b13-main {
+            grid-area: main;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .b13-footer {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu   main   main   main   main   main'
+                'menu   footer footer footer footer footer';
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            /* background-color: rgba(255, 255, 255, 0.8); */
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .sky {
+            position: absolute;
+            width: 100%;
+            background: #4b79a1;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top,
+                    #283e51,
+                    #0a2342);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top,
+                    #283e51,
+                    #0a2342);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: -olinear-gradient(to top, #283e51, #0a2342);
+            height: 100vh;
+        }
+
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+            z-index: 0;
+        }
+
+        h3 {
+            font-family: "Rammetto One";
+            text-align: center;
+            font-size: 1.75rem;
+            color: #fff;
+            width: 55%;
+            margin: 5rem auto;
+            line-height: 3rem;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='sky'>
+        <div class='stars'>
+            <div class="grid-container">
+                <div class="b13-header" style="color: silver;"">
+                    <!--<header> -->
+                    <h1 >Don't panic</h1>
+                    <p>I may be a sorry case, but I don't write jokes in base 13.</p>
+                    <!-- </header> -->
+                </div>
+                <div class="b13-menu"></div>
+                <div class="b13-main">
+                    <img src="docs/assets/Answer_to_Life_42.svg" alt="Meaning of life" />
+                </div>
+                <div class="b13-footer"></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
